@@ -1,0 +1,25 @@
+<h1 class="text-success text-center m-4">All Scope Data With Status True And False</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Title</th>
+      <th scope="col">Desctiption</th>
+      <th scope="col">Status</th>
+      <th scope="col">Price</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+  <%   @all_scope_data.each do |all_scope_data| %>
+    <tr>
+      <th scope="row"> <%= all_scope_data.id %> </th>
+      <td><%= all_scope_data.title %></td>
+      <td><%= all_scope_data.description %></td>
+      <td><%= all_scope_data.status %></td>
+      <td><%= all_scope_data.price %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,26 @@
+<h1 class="text-success text-center m-4"> Status False Products </h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Title</th>
+      <th scope="col">Desctiption</th>
+      <th scope="col">Status</th>
+      <th scope="col">Price</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+  <% @notdefault.each do |notdefault| %>
+    <tr>
+      <th scope="row"> <%= notdefault.id %> </th>
+      <td><%= notdefault.title %></td>
+      <td><%= notdefault.description %></td>
+      <td><%= notdefault.status %></td>
+      <td><%= notdefault.price %></td>
+      
+    </tr>
+    <% end %>
+  </tbody>
+</table>

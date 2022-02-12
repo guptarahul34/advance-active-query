@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  no_of_order: 1
+  out_for_print: false
+
+two:
+  name: MyString
+  no_of_order: 1
+  out_for_print: false
